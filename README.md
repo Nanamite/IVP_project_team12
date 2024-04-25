@@ -21,7 +21,7 @@ The simple architecture is quite effective in denoising as can be observed in `v
 Visualizing the model training:
 <p align= 'center'><img src= 'training_journey.gif'></p>
 
-SSIM and PSNR are used as metrics to measure performance:
+SSIM and PSNR are used as metrics to measure performance. <b>NOTE:</b> noise level of 15 was used to train and test the model:
 |Test Set|average SSIM|average PSNR|
 |:--------:|:----------:|:-----------:|
 |Set12|0.826|25.248|
