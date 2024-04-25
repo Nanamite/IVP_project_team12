@@ -19,4 +19,4 @@ python infer.py --img_path <img_path> --save_dir <save directory>
 The simple architecture is quite effective in denoising as can be observed in `visualize.ipynb`. `training_journey.gif` shows the output of the model after each epoch during training of 40 epochs. The training details can also be seen in `visualize.ipynb`
 
 Visualizing the model training:
-<center><img src= 'training_journey.gif'></center>
+<p align= 'center'><img src= 'training_journey.gif'></p>
