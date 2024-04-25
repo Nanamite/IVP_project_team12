@@ -11,6 +11,6 @@ Everything can be visualized in 'visualize.ipynb'. For training again, the train
 
 ## infer results
 'infer.py' can be used to denoise a noisy image. A clean image can be provided, on which a noise with level 15 is added before denoising. If passing a noisy image use the flag '--alredy_noisy'. for general infering:
-'''
+```
 python infer.py --img_path <img_path> --save_dir <save directory>
-'''
+```
