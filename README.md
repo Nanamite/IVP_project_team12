@@ -1,8 +1,8 @@
 # denoising_autoencoder
 
-\hline
+-------------
 
-\hline
+---------------
 
 This is a simple autoencoder based implementation for denoising images. For training, the dataset used in (DnCNN-Pytorch)[https://github.com/SaoYan/DnCNN-PyTorch] is used here too. Testing is done on Set12 and Set68 respectively.
 
