@@ -22,7 +22,7 @@ Visualizing the model training:
 <p align= 'center'><img src= 'training_journey.gif'></p>
 
 Sample denoising:
-<p align= 'center'><img src= '01.png', caption= 'ground truth></p>
+<p align= 'center'><img src= '01.png' caption= 'ground truth></p>
 
 SSIM and PSNR are used as metrics to measure performance. <b>NOTE:</b> noise level of 15 was used to train and test the model:
 |Test Set|average SSIM|average PSNR|
