@@ -27,6 +27,7 @@ Sample denoising:
 |:----------:|:----------:|:----------:|
 |<img src= '01.png'>|<img src= './run3/noisy_img.png'>|<img src = './run3/denoised_img.png'>|
 
+<img src= '01.png' caption= 'ground truth'>
 SSIM map wrt ground truth comparison:
 |ssim map: Noisy ($\sigma = 15$)|ssim map: Denoised|
 |:----------:|:----------:|
