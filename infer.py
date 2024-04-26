@@ -29,6 +29,8 @@ def denoise(img, noise_level= 15, already_noisy= False):
     else:
         img_noisy = img_tensor.to(device).unsqueeze(0)
 
+    noisy_image = img_noisy.squeeze().cpu().numpy()
+
     with torch.no_grad():
         denoised = model(img_noisy)
 
@@ -37,7 +39,9 @@ def denoise(img, noise_level= 15, already_noisy= False):
     ssim_map, mssim = SSIM(img, denoised)
     _, psnr = MSE(img, denoised)
 
-    return denoised, ssim_map, mssim, psnr
+    ssim_map_noisy, mssim_noisy = SSIM(img, noisy_image)
+
+    return noisy_image, denoised, ssim_map, mssim, psnr, ssim_map_noisy, mssim_noisy
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -51,13 +55,15 @@ if __name__ == '__main__':
 
     img = Image.open(args.img_path).convert('L')
 
-    denoised, ssim_map, mssim, psnr = denoise(img, 15, args.already_noisy)
+    noisy_image, denoised, ssim_map, mssim, psnr, ssim_map_noisy, _ = denoise(img, 15, args.already_noisy)
 
     log = open(rf'{args.save_dir}\results.txt', 'w+')
     log.write(f'avg_ssim= {mssim}, avg_psnr= {psnr}')
     log.close()
 
+    plt.imsave(rf'{args.save_dir}\noisy_img.png', noisy_image, cmap= 'gray')
     plt.imsave(f'{args.save_dir}\denoised_img.png', denoised, cmap= 'gray')
     plt.imsave(f'{args.save_dir}\ssim_map.png', ssim_map, cmap= 'gray')
+    plt.imsave(rf'{args.save_dir}\noisy_ssim_map.png', ssim_map_noisy, cmap= 'gray')
 
 
