@@ -21,7 +21,7 @@ The simple architecture is quite effective in denoising as can be observed in `v
 Visualizing the model training:
 <p align= 'center'><img src= 'training_journey.gif'></p>
 
-![](./run3/noisy_img.png)
+
 Sample denoising:
 |Ground Truth|Noisy ($\sigma = 15$)|Denoised|
 |:----------:|:----------:|:----------:|
