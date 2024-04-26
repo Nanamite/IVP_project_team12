@@ -25,7 +25,7 @@ Visualizing the model training:
 Sample denoising:
 |Ground Truth|Noisy ($\sigma = 15$)|Denoised|
 |:----------:|:----------:|:----------:|
-![01.png]('01.png')|![]('run3/noisy_img.png')|![]('run3/denoised_img.png')
+![[01.png](https://github.com/Nanamite/denoising_autoencoder/blob/main/01.png)]|![]('run3/noisy_img.png')|![]('run3/denoised_img.png')
 
 SSIM map wrt ground truth comparison:
 
