@@ -24,12 +24,12 @@ Visualizing the model training:
 Sample denoising:
 |Ground Truth|Noisy ($\sigma = 15$)|Denoised|
 |:----------:|:----------:|:----------:|
-|![](04.png)|![](run3\noisy_img.png)|![](run3\denoised_img.png)|
+|![](04.png)|![](.\run3\noisy_img.png)|![](.\run3\denoised_img.png)|
 
 SSIM map wrt ground truth comparison:
 |ssim map: Noisy ($\sigma = 15$)|ssim map: Denoised|
 |:----------:|:----------:|
-|![](run3\noisy_ssim_map.png)|![](run3\ssim_map.png)|
+|![](.\run3\noisy_ssim_map.png)|![](.\run3\ssim_map.png)|
 
 SSIM and PSNR are used as metrics to measure performance. <b>NOTE:</b> noise level of 15 was used to train and test the model:
 |Test Set|average SSIM|average PSNR|
