@@ -25,7 +25,7 @@ Visualizing the model training:
 Sample denoising:
 |Ground Truth|Noisy ($\sigma = 15$)|Denoised|
 |:----------:|:----------:|:----------:|
-<img src= '01.png'>|<img src= './run3/noisy_img.png'>|<img src = './run3/denoised_img.png'>
+![]('01.png')|![]('./run3/noisy_img.png')|![]('./run3/denoised_img.png')
 
 <img src= '01.png' caption= 'ground truth'>
 SSIM map wrt ground truth comparison:
