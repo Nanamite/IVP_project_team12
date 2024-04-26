@@ -25,13 +25,13 @@ Visualizing the model training:
 Sample denoising:
 |Ground Truth|Noisy ($\sigma = 15$)|Denoised|
 |:----------:|:----------:|:----------:|
-![[01.png](https://github.com/Nanamite/denoising_autoencoder/blob/main/01.png)]|![]('run3/noisy_img.png')|![]('run3/denoised_img.png')
+![[01.png](https://github.com/Nanamite/denoising_autoencoder/blob/main/01.png)]|![noisy_img]('[run3/noisy_img.png](https://github.com/Nanamite/denoising_autoencoder/blob/main/run3/noisy_img.png)')|![denoised]('[run3/denoised_img.png](https://github.com/Nanamite/denoising_autoencoder/blob/main/run3/denoised_img.png)')
 
 SSIM map wrt ground truth comparison:
 
 |ssim map: Noisy ($\sigma = 15$)|ssim map: Denoised|
 |:----------:|:----------:|
-|![](run3/noisy_ssim_map.png)|![](run3/ssim_map.png)|
+|![ssim_map_noisy]([run3/noisy_ssim_map.png](https://github.com/Nanamite/denoising_autoencoder/blob/main/run3/noisy_ssim_map.png))|![ssim_map_denoised]([run3/ssim_map.png](https://github.com/Nanamite/denoising_autoencoder/blob/main/run3/ssim_map.png))|
 
 SSIM and PSNR are used as metrics to measure performance. <b>NOTE:</b> noise level of 15 was used to train and test the model:
 |Test Set|average SSIM|average PSNR|
